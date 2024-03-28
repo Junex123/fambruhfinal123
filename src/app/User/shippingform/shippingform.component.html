@@ -1,0 +1,274 @@
+
+<app-navbar></app-navbar>
+<body >
+<div style="padding-top: 100px;" class="container">
+    <form id="contact-form">
+      <h1 style="color:#e2c707">Billing & Shipping Form</h1>
+      <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+  
+      <div class="form-item flex">
+        <div>
+          <label for="first-name">First Name <abbr title="required" aria-label="required">*</abbr></label>
+        <input
+          required
+          type="text"
+          name="first-name"
+          placeholder="First name"
+          aria-required="true" />
+        <span class="focus"></span>
+        </div>
+        <div>
+          <label for="last-name">Last Name <abbr title="required" aria-label="required">*</abbr></label>
+          <input
+            required
+            type="text"
+            name="last-name"
+            placeholder="Last name"
+            aria-required="true" />
+            <span class="focus"></span>
+        </div>
+      </div>
+  
+      <div class="form-item flex">
+        <div>
+          <label for="phone">Phone Number <abbr title="required" aria-label="required">*</abbr></label>
+          <input
+            required
+            type="text"
+            name="phone"
+            placeholder="123-456-7890"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            aria-required="true" />
+          <span class="focus"></span>
+        </div>
+      </div>
+  
+      <fieldset id="form-billing-address">
+        <legend style="color:#e2c707">Billing Address</legend>
+          <div class="form-item">
+            <div>
+              <label for="address-1">Address 1 <abbr title="required" aria-label="required">*</abbr></label>
+              <input
+                required
+                type="text"
+                name="address-1"
+                placeholder="Address line 1"
+                aria-required="true" />
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div class="form-item">
+            <div>
+              <label for="address-2">Address 2</label>
+              <input
+                type="text"
+                name="address-2"
+                placeholder="Address line 2" />
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div class="form-item flex">
+            <div>
+              <label for="city">City <abbr title="required" aria-label="required">*</abbr></label>
+              <input
+                required
+                type="text"
+                name="city"
+                placeholder="City"
+                aria-required="true" />
+              <span class="focus"></span>
+            </div>
+            <div>
+            <label for="state">State <abbr title="required" aria-label="required">*</abbr></label>
+            <select
+              required
+              name="state"
+              aria-required="true" >
+              <option value="">-- Select --</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="District of Columbia">District of Columbia</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+            </div>
+          </div>
+          <div class="form-item flex">
+            <div>
+              <label for="zip-code">Zip Code <abbr title="required" aria-label="required">*</abbr></label>
+              <input
+                required
+                type="text"
+                name="zip-code"
+                placeholder="12345 or 12345-6789"
+                pattern="(\d{5}([\-]\d{4})?)"
+                aria-required="true" />
+              <span class="focus"></span>
+            </div>
+          </div>
+      </fieldset>
+  
+      <fieldset id="form-shipping-address">
+        <legend style="color:#e2c707">Shipping Address</legend>
+        <div class="form-item">
+          <div>
+            <label for="address-1-2">Address 1 <abbr title="required" aria-label="required">*</abbr></label>
+            <input
+              required
+              type="text"
+              name="address-1-2"
+              placeholder="Address line 1"
+              aria-required="true" />
+            <span class="focus"></span>
+          </div>
+        </div>
+        <div class="form-item">
+          <div>
+            <label for="address-2-2">Address 2</label>
+            <input
+              type="text"
+              name="address-2-2"
+              placeholder="Address line 2" />
+            <span class="focus"></span>
+          </div>
+        </div>
+        <div class="form-item flex">
+          <div>
+            <label for="city-2">City <abbr title="required" aria-label="required">*</abbr></label>
+            <input
+              required
+              type="text"
+              name="city-2"
+              placeholder="City"
+              aria-required="true" />
+            <span class="focus"></span>
+          </div>
+          <div>
+            <label for="state-2">State <abbr title="required" aria-label="required">*</abbr></label>
+            <select
+              required
+              name="state-2"
+              aria-required="true" >
+              <option value="">-- Select --</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="District of Columbia">District of Columbia</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-item flex">
+          <div>
+            <label for="zip-code-2">Zip Code <abbr title="required" aria-label="required">*</abbr></label>
+            <input
+              required
+              type="text"
+              name="zip-code-2"
+              placeholder="12345 or 12345-6789"
+              pattern="(\d{5}([\-]\d{4})?)"
+              aria-required="true" />
+              <span class="focus"></span>
+          </div>
+        </div>
+      </fieldset>
+  
+      <button>
+        <span class="label-up" (click)="goToPayment()">Purchase</span>
+       
+      </button>
+      </form>
+  </div>
+</body>
